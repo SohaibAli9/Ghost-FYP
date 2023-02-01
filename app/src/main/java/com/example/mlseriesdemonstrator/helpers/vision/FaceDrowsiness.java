@@ -6,7 +6,7 @@ import java.util.ArrayDeque;
 
 public class FaceDrowsiness {
     private static final float DROWSINESS_THRESHOLD = 0.5f;
-    private static final int MAX_HISTORY = 10;
+    private static final int MAX_HISTORY = 5;
 
     public long lastCheckedAt;
     private final ArrayDeque<Boolean> history = new ArrayDeque<>();
@@ -20,20 +20,21 @@ public class FaceDrowsiness {
         }
         if (face.getLeftEyeOpenProbability() < DROWSINESS_THRESHOLD
             && face.getRightEyeOpenProbability() < DROWSINESS_THRESHOLD) {
-            history.addLast(true);
+//            history.addLast(true);
         } else {
-            history.addLast(false);
+//            history.addLast(false);
+            isDrowsy = false;
         }
-        if (history.size() > MAX_HISTORY) {
-            history.removeFirst();
-        }
-        if (history.size() == MAX_HISTORY) {
-            for (boolean instance : history) {
-                isDrowsy &= instance;
-            }
-        } else {
-            return false;
-        }
+//        if (history.size() > MAX_HISTORY) {
+//            history.removeFirst();
+//        }
+//        if (history.size() == MAX_HISTORY) {
+//            for (boolean instance : history) {
+//                isDrowsy &= instance;
+//            }
+//        } else {
+//            return false;
+//        }
         return isDrowsy;
     }
 }

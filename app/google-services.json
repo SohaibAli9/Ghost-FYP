@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "1055380646416",
+    "firebase_url": "https://ghost-e4544-default-rtdb.firebaseio.com",
+    "project_id": "ghost-e4544",
+    "storage_bucket": "ghost-e4544.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1055380646416:android:583ecddb22c5d598b7b895",
+        "android_client_info": {
+          "package_name": "com.example.mlseriesdemonstrator"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1055380646416-gpkck5arn7a08v74t9iuta6vie35l1l3.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAzilrI_Z79QInoPcj-zE2Oc4W1kft4zvc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1055380646416-gpkck5arn7a08v74t9iuta6vie35l1l3.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

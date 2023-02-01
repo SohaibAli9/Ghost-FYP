@@ -8,6 +8,8 @@ import com.example.mlseriesdemonstrator.helpers.vision.VisionBaseProcessor;
 
 public class DriverDrowsinessDetectionActivity extends MLVideoHelperActivity {
 
+
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
