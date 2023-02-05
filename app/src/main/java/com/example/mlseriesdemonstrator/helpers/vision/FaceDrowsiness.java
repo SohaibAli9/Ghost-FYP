@@ -20,8 +20,9 @@ public class FaceDrowsiness {
         }
         if (face.getLeftEyeOpenProbability() < DROWSINESS_THRESHOLD
             && face.getRightEyeOpenProbability() < DROWSINESS_THRESHOLD) {
-//            history.addLast(true);
+            history.addLast(true);
         } else {
+
 //            history.addLast(false);
             isDrowsy = false;
         }
